@@ -13,18 +13,18 @@ const CardBtn = styled.div`
     background:#0B85A9;
     width:12.5rem;
     height:15.0625rem;
-    border-radius:5px;
+    border-radius:0.625rem;
     cursor:pointer;
+    margin:1.5rem;
 `
 const CardTitle = styled.h2`
     color:#fff;
 
 `
-const AddFieldBtn = () => {
+const AddForm = () => {
 	const addForm = useStoreActions((actions) => actions.forms.createForm);
 
     return (
-        <Container marginLg>
             <CardBtn 
                 onClick={() => {
                     let id = shortid.generate();
@@ -38,8 +38,7 @@ const AddFieldBtn = () => {
                     <img src={icons.plusIcon} alt="plus icon"/>
                 </div>
             </CardBtn>
-        </Container>
     )
 }
 
-export default AddFieldBtn;
+export default AddForm;

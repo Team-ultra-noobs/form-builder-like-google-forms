@@ -23,7 +23,7 @@ const Button = styled.button`
 
 const SearchBar = styled.div`
     border-radius:1.5rem;
-    border: ${props => props.active ? '1px solid #198754' : '1px solid #424242'};
+    border: ${props => props.active ? '2px solid #198754' : '1px solid #424242'};
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -40,6 +40,7 @@ const Input = styled.input`
 
 const Icon = styled.img`
     cursor:pointer;
+    margin-left:.5rem;
 `
 
 const SecondaryNav = () => {
@@ -64,7 +65,7 @@ const SecondaryNav = () => {
                         Create Form +
                     </Button>
                 </Dflex>
-                <Dflex width>
+                <Dflex>
                     <SearchBar active = {active} onBlur = {() => setActive(false)} onClick = {() => setActive(true)} >
                         <Input value = {searchTerm} onChange = {e=> setSearchTerm(e.target.value)} type="text" placeholder="Search"/>
                         <img src={icons.searchIcon} alt="search bar icon"/>
