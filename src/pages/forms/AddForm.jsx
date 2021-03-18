@@ -12,7 +12,7 @@ const CardBtn = styled.div`
     justify-content:space-evenly;
     background:#0B85A9;
     width:12.5rem;
-    height:15.0625rem;
+    height:14.5rem;
     border-radius:0.625rem;
     cursor:pointer;
     margin:1.5rem;
