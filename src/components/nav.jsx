@@ -1,12 +1,20 @@
 import { Link } from "@reach/router";
+import Container from './Container';
+import {images} from '../assets/'
 
 const Nav = () => {
 	return (
-		<ul>
-			<Link to='/'>All Forms</Link>
-			<br />
-			<Link to='forms/:formId'>Buuildewr</Link>
-		</ul>
+		<Container>
+			<div>
+				<div>
+					<Link to='/'>
+						<img src={images.logo} alt="plus icon"/>
+					</Link>
+				</div>
+				<div>
+				</div>
+			</div>
+		</Container>
 	);
 };
 

@@ -4,21 +4,34 @@ import Nav from "../../components/nav";
 import { useStoreActions } from "easy-peasy";
 import shortid from "shortid";
 
+import styled from 'styled-components';
+
+
+const Button = styled.button`
+	background:#0B85A9;
+	padding:.7rem;
+	color:#fff;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	border-radius:.5rem;
+`
+
 const Forms = () => {
 	const addForm = useStoreActions((actions) => actions.forms.createForm);
 	return (
 		<div>
 			<Nav />
 			<h1>Hello Forms</h1>
-			<button
+			<Button
 				onClick={() => {
 					let id = shortid.generate();
 					addForm(id);
 					console.log(id);
 					navigate(`forms/${id}`);
 				}}>
-				Add New Form
-			</button>
+				Create Form +
+			</Button>
 		</div>
 	);
 };
