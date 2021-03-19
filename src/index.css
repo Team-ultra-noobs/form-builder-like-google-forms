@@ -14,3 +14,10 @@ body {
     background-color: #F5F5F5;
 }
 
+a{
+  text-decoration: none;
+}
+li{
+  list-style-type: none;
+}
+
