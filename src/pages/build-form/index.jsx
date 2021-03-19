@@ -1,5 +1,14 @@
+import Nav from "../../components/nav";
+import SideNav from "./SideNav";
+
+
 const FormBuilder = () => {
-	return <h2>Hello Builder</h2>;
+	return (
+		<>
+			<Nav isBuilder />
+			<SideNav />
+		</>
+	);
 };
 
 export default FormBuilder;

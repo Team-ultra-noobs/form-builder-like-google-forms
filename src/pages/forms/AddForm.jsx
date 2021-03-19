@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import {icons} from '../../assets';
-import Container from '../../components/Container';
 import { navigate } from "@reach/router";
 import { useStoreActions } from "easy-peasy";
 import shortid from "shortid";
+import styled from 'styled-components';
+
+import {icons} from '../../assets';
 
 const CardBtn = styled.div`
     display:flex;
