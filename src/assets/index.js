@@ -11,6 +11,11 @@ import settingIcon          from './icons/settingIcon.svg';
 import timeIcon             from './icons/timeIcon.svg'
 import settingIconSecondary from './icons/settingIconSecondary.svg';
 import addSection           from './icons/addSection.svg'
+import toggleOn             from './icons/toggleOn.svg';
+import toggleOff            from './icons/toggleOff.svg';
+import settingIconInput     from './icons/settingIconInput.svg';
+import shortPara            from './icons/shortPara.svg';
+import longPara             from './icons/longPara.svg';
 
 const images = {
     logo,
@@ -27,7 +32,12 @@ const icons = {
     settingIcon,
     timeIcon,
     settingIconSecondary,
-    addSection
+    addSection,
+    toggleOff,
+    toggleOn,
+    settingIconInput,
+    shortPara,
+    longPara
 }
 
 export { images, icons }
