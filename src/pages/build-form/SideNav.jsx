@@ -9,8 +9,8 @@ const SideNavWrapper = styled.div`
     left:0;
     height:100%;
     width:3rem;
-    background:#fff;
-    padding:1rem 0.2rem;
+    background:#F5F5F5;
+    padding:2rem 0.2rem;
 `
 
 const SideNavItem = styled.li`

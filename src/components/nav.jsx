@@ -46,7 +46,7 @@ const DropDown = styled.img`
 const Nav = ({isBuilder, title, btnText}) => {
 	return (
 			<Navigation>
-				<Container>
+				<Container scale = {isBuilder}>
 					<DFlex>
 						<Link to='/'>
 							<LogoWrap>
