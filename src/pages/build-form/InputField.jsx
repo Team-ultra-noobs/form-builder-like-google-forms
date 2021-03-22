@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import styled from 'styled-components';
-import {icons} from '../../assets';
-import DFlex from '../../components/DFlex';
+import styled     from 'styled-components';
+import {icons}    from '../../assets';
+import DFlex      from '../../components/DFlex';
 
 const InputFieldWrapper = styled.div`
     margin: 0 auto;
@@ -21,6 +21,9 @@ const Input = styled.input`
     color:#424242;
 `
 
+const Dropdown = styled.div`
+
+`
 
 
 const Icon = styled.img`
@@ -31,7 +34,7 @@ const Icon = styled.img`
 const InputField = ({inputs, handleChange}) => {
     const [text, setText] = useState('Dropdown Button')
     const [toggle, setToggle] = useState(false);    
-
+    console.log(inputs);
     
     return (
         <InputFieldWrapper>
