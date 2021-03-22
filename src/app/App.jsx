@@ -6,6 +6,7 @@ import { StoreProvider } from "easy-peasy";
 import Router from "./router";
 import store from "../store";
 
+
 /**
  * App component is the root of our React application. From here we will route and provide all necessary context and states
  * @name App

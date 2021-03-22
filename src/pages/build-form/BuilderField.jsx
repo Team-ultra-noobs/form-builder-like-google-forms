@@ -12,10 +12,10 @@ const BuilderFieldWrapper = styled.div`
 
 
 
-const BuilderField = () => {
+const BuilderField = ({inputs, handleChange}) => {
     return (
         <BuilderFieldWrapper>
-            <InputField />
+            <InputField inputs= {inputs} handleChange={handleChange}/>
         </BuilderFieldWrapper>
     )
 }
