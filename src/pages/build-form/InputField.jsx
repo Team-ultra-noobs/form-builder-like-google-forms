@@ -1,3 +1,4 @@
+import {useState} from 'react';
 import styled from 'styled-components';
 import {icons} from '../../assets';
 import DFlex from '../../components/DFlex';
@@ -21,55 +22,29 @@ const Input = styled.input`
 `
 
 
-const Select = styled.select`
-  height: 2rem;
-  width: 100%;
-  background: white;
-  color: gray;
-  padding-left: 0.5rem;
-  font-size: 14px;
-  border: none;
-  margin-left: 10px;
-  outline:none;
-  border: 1px solid #9E9E9E;
-  border-radius:0.2rem;
-
-  option {
-    color: black;
-    background: white;
-    display: flex;
-    min-height: 20px;
-    padding: 2rem;
-  }
-`;
-
 
 const Icon = styled.img`
   margin-left:${props => props.hasMargin ? '1.2rem' : 'inherite'};
   cursor:pointer;
 `
 
-const InputField = () => {
+const InputField = ({inputs, handleChange}) => {
+    const [text, setText] = useState('Dropdown Button')
+    const [toggle, setToggle] = useState(false);    
+
+    
     return (
         <InputFieldWrapper>
             <DFlex>
-                <Input type="text" value='untitled'/>
+                <Input name='name' type="text" value={inputs.name} onChange={handleChange} />
                 <DFlex hasWidth hasSpaceEvenly>
-                    <Select>
-                        <option value="">
-                            <img src={icons.shortPara} alt="short Paragraph icon"/>
-                            Type
-                        </option>
-                        <option value="1">Audi</option>
-                        <option value="2">BMW</option>
-                        <option value="3">Citroen</option>
-                        <option value="4">Ford</option>
-                    </Select>
-                    <Icon hasMargin src={icons.toggleOn} alt="toggle button"/>
+                    
+
+                    <Icon hasMargin onClick={()=> setToggle((prev) => !prev)}  src={toggle === false ? icons.toggleOff : icons.toggleOn} alt="toggle button"/>
                     <Icon src={icons.settingIconInput} alt="setting icon for edit input bar"/>
                 </DFlex>
             </DFlex>
-            <Input hasBg hasScale hasPadding hasMargin hasFontSize type="text" placeholder="form description(optional)"/>
+            <Input onChange={handleChange} name= 'description' value={inputs.description} hasBg hasScale hasPadding hasMargin hasFontSize type="text" placeholder="form description(optional)"/>
 
         </InputFieldWrapper>
     )

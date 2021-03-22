@@ -43,7 +43,7 @@ const DropDown = styled.img`
 	margin-left:0.5rem;
 `
 
-const Nav = ({isBuilder, title, btnText}) => {
+const Nav = ({ isBuilder, inputs}) => {
 	return (
 			<Navigation>
 				<Container scale = {isBuilder}>
@@ -54,7 +54,7 @@ const Nav = ({isBuilder, title, btnText}) => {
 								{
 								isBuilder && 
 								 	<>
-										<LogoTitle>Bootcamp Registration</LogoTitle> 
+										<LogoTitle>{inputs.name}</LogoTitle> 
 								 		<img src={icons.settingIconSecondary} alt="setting icon"/> 
 									</>
 								 }
