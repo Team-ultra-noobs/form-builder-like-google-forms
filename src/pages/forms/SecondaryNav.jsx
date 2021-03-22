@@ -1,13 +1,13 @@
-import {useState} from 'react'
+import {useState}          from 'react'
 import { useStoreActions } from "easy-peasy";
-import shortid from "shortid";
-import { navigate } from "@reach/router";
-import styled from 'styled-components';
+import shortid             from "shortid";
+import { navigate }        from "@reach/router";
+import styled              from 'styled-components';
 
-import Button from '../../components/Button';
-import Container from '../../components/Container'
-import Dflex from '../../components/DFlex';
-import {icons,images} from '../../assets'
+import Button              from '../../components/Button';
+import Container           from '../../components/Container'
+import Dflex               from '../../components/DFlex';
+import {icons,images}      from '../../assets'
 
 
 

@@ -1,16 +1,12 @@
-import React from "react";
-import styled from 'styled-components';
-import Nav from "../../components/nav";
+import React 		from "react";
+import styled 		from 'styled-components';
+import Nav 			from "../../components/nav";
 import SecondaryNav from './SecondaryNav';
-import AddForm from './AddForm';
-import FormCard from './FormCard';
-import Container from "../../components/Container";
+import AddForm 		from './AddForm';
+import FormCard 	from './FormCard';
+import Container 	from "../../components/Container";
+import DFlex 		from '../../components/DFlex'
 
-const DFlex = styled.div`
-	display:flex;
-	align-items:center;
-	flex-wrap:wrap;
-`;
 const Forms = () => {
 	return (
 		<div>
