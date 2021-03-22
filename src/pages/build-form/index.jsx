@@ -1,7 +1,7 @@
-import {useState} from 'react';
-import Nav from "../../components/nav";
+import {useState} 	from 'react';
+import Nav 			from "../../components/nav";
 import BuilderField from "./BuilderField";
-import SideNav from "./SideNav";
+import SideNav 		from "./SideNav";
 
 
 const FormBuilder = () => {
