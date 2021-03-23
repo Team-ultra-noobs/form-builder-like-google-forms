@@ -46,7 +46,7 @@ const OptionWrapper = styled.div`
 
 `
 
-const Option = styled.div`
+const Option = styled.label`
     width:60%;
     border-bottom:1px solid #9E9E9E;
     margin-top:1rem;
@@ -59,8 +59,8 @@ const Option = styled.div`
 
 const Label = styled.label`
     margin-left:0.5rem;
+    
 `
-
 
 
 const McqField = () => {
@@ -82,19 +82,21 @@ const McqField = () => {
                 </DFlex>
             </DFlex>
             <OptionWrapper>
-                <Option>
-                    <input  name= 'multiple'  type="radio"/>
-                    <Label htmlFor="multiple"> Option 01 </Label>
+
+
+                <Option >
+                    <input  name= 'multiple' id="optionOne"  type="radio"/>
+                    <Label for="optionOne"> Option 01 </Label>
                 </Option>
 
                 <Option>
-                    <input  name= 'multiple'  type="radio"/>
-                    <Label htmlFor="multiple"> Option 01 </Label>
+                    <input  name= 'multiple' id="optionTwo" type="radio"/>
+                    <Label for="optionTwo"> Option 01 </Label>
                 </Option>
 
                 <Option>
-                    <input  name= 'multiple'  type="radio"/>
-                    <Label htmlFor="multiple"> Add Option </Label>
+                    <input  name= 'multiple' id="optionThree" type="radio"/>
+                    <Label for="optionThree"> Add Option </Label>
                 </Option>
             </OptionWrapper>
 
