@@ -1,4 +1,5 @@
 import styled     from 'styled-components'
+import CheckField from './inputFields/CheckField';
 import InputField from './inputFields/InputField';
 import McqField   from './inputFields/McqField';
 
@@ -8,9 +9,12 @@ const BuilderFieldWrapper = styled.div`
     height:92vh;
     margin-left:3rem;
     padding:1.5rem;
+    overflow:scroll;
 
+    ::-webkit-scrollbar{
+        display:none;
+    }
 `;
-
 
 
 const BuilderField = ({inputs, handleChange}) => {
@@ -18,6 +22,7 @@ const BuilderField = ({inputs, handleChange}) => {
         <BuilderFieldWrapper>
             <InputField inputs= {inputs} handleChange={handleChange}/>
             <McqField/>
+            <CheckField/>
         </BuilderFieldWrapper>
     )
 }
