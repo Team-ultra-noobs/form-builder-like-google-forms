@@ -5,7 +5,13 @@ import SecondaryNav from './SecondaryNav';
 import AddForm 		from './AddForm';
 import FormCard 	from './FormCard';
 import Container 	from "../../components/Container";
-import DFlex 		from '../../components/DFlex'
+
+
+const DisplayFlex = styled.div`
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+`;
 
 const Forms = () => {
 	return (
@@ -13,7 +19,7 @@ const Forms = () => {
 			<Nav />
 			<SecondaryNav/>
 			<Container marginLg scale>
-				<DFlex>
+				<DisplayFlex>
 					<AddForm/>
 					<FormCard/>
 					<FormCard/>
@@ -24,7 +30,7 @@ const Forms = () => {
 					<FormCard/>
 					<FormCard/>
 					<FormCard/>
-				</DFlex>
+				</DisplayFlex>
 			</Container>
 		</div>
 	);

@@ -21,13 +21,24 @@ const Input = styled.input`
     color:#424242;
 `
 
-const Dropdown = styled.div`
-
+const DropdownWrapper = styled.div`
+    height:2rem;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    border: 1px solid #b3a0a0;
+    flex-grow:1;
+    cursor:pointer;
+    border-radius:0.4rem;
+    padding:0.2rem;
 `
 
+const DropdownItemTitle = styled.p`
+    font-size:0.9rem;
+`;
 
 const Icon = styled.img`
-  margin-left:${props => props.hasMargin ? '1.2rem' : 'inherite'};
+  margin-left:${props => props.hasMargin ? '1rem' : 'inherite'};
   cursor:pointer;
 `
 
@@ -41,8 +52,11 @@ const InputField = ({inputs, handleChange}) => {
             <DFlex>
                 <Input name='name' type="text" value={inputs.name} onChange={handleChange} />
                 <DFlex hasWidth hasSpaceEvenly>
-                    
-
+                    <DropdownWrapper>
+                        <Icon src={icons.longPara}/>
+                        <DropdownItemTitle>Dummy Text</DropdownItemTitle>
+                        <Icon src={icons.dropDownArrow}/>
+                    </DropdownWrapper>
                     <Icon hasMargin onClick={()=> setToggle((prev) => !prev)}  src={toggle === false ? icons.toggleOff : icons.toggleOn} alt="toggle button"/>
                     <Icon src={icons.settingIconInput} alt="setting icon for edit input bar"/>
                 </DFlex>

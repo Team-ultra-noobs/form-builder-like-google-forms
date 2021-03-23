@@ -8,10 +8,11 @@ const formModel = persist(
         createForm: action((state, payload) => {
             const form = {}
             form.id = payload.id;
-            form.name = payload.name;
+            form.name ='Untitled Form';
             form.fields = [];
             form.fieldCount = form.fields.length
             state.forms[form.id] = form
+            console.log(state.forms)
         }),
         updateName: action((state, payload) => {
             state.forms[payload.formId].name = payload.name
