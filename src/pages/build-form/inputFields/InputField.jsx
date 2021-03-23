@@ -1,10 +1,10 @@
 import {useState} from 'react';
 import styled     from 'styled-components';
-import {icons}    from '../../assets';
-import DFlex      from '../../components/DFlex';
+import {icons}    from '../../../assets';
+import DFlex      from '../../../components/DFlex';
 
 const InputFieldWrapper = styled.div`
-    margin: 0 auto;
+    margin: 0.5rem auto;
     background:#F5F5F5;
     padding:1rem;
     border-radius:0.5rem;
@@ -17,7 +17,7 @@ const Input = styled.input`
     padding:${props => props.hasPadding ? '0.8rem' : '1rem 2rem 1rem 0.8rem'};
     font-size:${props => props.hasFontSize ? '0.8rem' : '2rem'};
     margin-top:${props => props.hasMargin && '0.5rem'};
-    border-bottom:1px solid #424242;
+    border-bottom:1px solid #9E9E9E;
     color:#424242;
 `
 
@@ -26,7 +26,7 @@ const DropdownWrapper = styled.div`
     display:flex;
     justify-content:space-around;
     align-items:center;
-    border: 1px solid #b3a0a0;
+    border: 1px solid #9E9E9E;
     flex-grow:1;
     cursor:pointer;
     border-radius:0.4rem;
@@ -54,7 +54,7 @@ const InputField = ({inputs, handleChange}) => {
                 <DFlex hasWidth hasSpaceEvenly>
                     <DropdownWrapper>
                         <Icon src={icons.longPara}/>
-                        <DropdownItemTitle>Dummy Text</DropdownItemTitle>
+                        <DropdownItemTitle>Long Para</DropdownItemTitle>
                         <Icon src={icons.dropDownArrow}/>
                     </DropdownWrapper>
                     <Icon hasMargin onClick={()=> setToggle((prev) => !prev)}  src={toggle === false ? icons.toggleOff : icons.toggleOn} alt="toggle button"/>
