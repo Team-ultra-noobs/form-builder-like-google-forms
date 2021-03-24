@@ -1,26 +1,23 @@
-import {useState} 	from 'react';
-import Nav 			from "../../components/nav";
+import { useState } from "react";
+import Nav from "../../components/nav";
 import BuilderField from "./BuilderField";
-import SideNav 		from "./SideNav";
-
+import SideNav from "./SideNav";
 
 const FormBuilder = () => {
-
-    const [inputs, setInputs] = useState({
-        name: 'untitled',
-        description: ''
-    })
+	const [inputs, setInputs] = useState({
+		name: "untitled",
+		description: "",
+	});
 
 	const handleChange = (e) => {
-        // [e.target.name] = [e.target.value]
-        setInputs({...inputs, [e.target.name] : e.target.value})
-    }
+		setInputs({ ...inputs, [e.target.name]: e.target.value });
+	};
 
 	return (
 		<>
-			<Nav inputs={inputs} isBuilder/>
+			<Nav inputs={inputs} isBuilder />
 			<SideNav />
-			<BuilderField inputs= {inputs} handleChange={handleChange}/>
+			<BuilderField inputs={inputs} handleChange={handleChange} />
 		</>
 	);
 };
