@@ -15,6 +15,7 @@ import listIcon             from './icons/listIcon.svg';
 import userIcon             from './icons/userIcon.svg';
 import settingIcon          from './icons/settingIcon.svg';
 import timeIcon             from './icons/timeIcon.svg'
+import timeIconSecondary    from './icons/timeIconSecondary.svg';
 import settingIconSecondary from './icons/settingIconSecondary.svg';
 import addSection           from './icons/addSection.svg'
 import toggleOn             from './icons/toggleOn.svg';
@@ -49,6 +50,7 @@ const icons = {
     userIcon,
     settingIcon,
     timeIcon,
+    timeIconSecondary,
     settingIconSecondary,
     addSection,
     toggleOff,
