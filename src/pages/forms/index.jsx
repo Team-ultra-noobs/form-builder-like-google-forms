@@ -15,8 +15,8 @@ const DisplayFlex = styled.div`
 `;
 
 const Forms = () => {
-	const forms = useStoreState((state) => state.forms);
-	console.log(Object.values(forms));
+	const forms = useStoreState((state) => state.forms.forms);
+
 	return (
 		<div>
 			<Nav />
@@ -25,20 +25,9 @@ const Forms = () => {
 				<DisplayFlex>
 					<AddForm />
 					{Object.values(forms).length !== 0 &&
-						Object.values(forms.forms).map((form) => {
-							console.log(Object.values(forms.forms).length);
-							// return null;
-							return <FormCard form={form} key={form.id} />;
-						})}
-					{/* <FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard />
-					<FormCard /> */}
+						Object.values(forms).map((form) => (
+							<FormCard form={form} key={form.id} />
+						))}
 				</DisplayFlex>
 			</Container>
 		</div>
