@@ -1,8 +1,10 @@
 import styled     from 'styled-components'
-import CheckField from './inputFields/CheckField';
-import DateField from './inputFields/DateField';
 import InputField from './inputFields/InputField';
 import McqField   from './inputFields/McqField';
+import CheckField from './inputFields/CheckField';
+import DateField  from './inputFields/DateField';
+import TimeField  from './inputFields/TimeField';
+
 
 const BuilderFieldWrapper = styled.div`
     width:50%;
@@ -26,6 +28,7 @@ const BuilderField = ({inputs, handleChange}) => {
             <McqField/>
             <CheckField/>
             <DateField/>
+            <TimeField/>
         </BuilderFieldWrapper>
     )
 }
