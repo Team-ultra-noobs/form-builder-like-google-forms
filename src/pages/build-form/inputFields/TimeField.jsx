@@ -45,7 +45,7 @@ const Icon = styled.img`
   cursor:pointer;
 `
 
-const DateField = () => {
+const TimeField = () => {
     const [text, setText] = useState('Dropdown Button')
     const [toggle, setToggle] = useState(false); 
     return (
@@ -54,17 +54,17 @@ const DateField = () => {
                 <Input name='name' type="text"/>
                 <DFlex hasWidth hasSpaceEvenly>
                     <DropdownWrapper>
-                        <Icon src={icons.dateIcon}/>
-                        <DropdownItemTitle>Date</DropdownItemTitle>
+                        <Icon src={icons.timeIconSecondary}/>
+                        <DropdownItemTitle>Time</DropdownItemTitle>
                         <Icon src={icons.dropDownArrow}/>
                     </DropdownWrapper>
                     <Icon hasMargin onClick={()=> setToggle((prev) => !prev)}  src={toggle === false ? icons.toggleOff : icons.toggleOn} alt="toggle button"/>
                     <Icon src={icons.settingIconInput} alt="setting icon for edit input bar"/>
                 </DFlex>
             </DFlex>
-            <Input  name= 'description' hasBg hasScale hasPadding hasMargin hasFontSizeSecondary type="date" placeholder="form description(optional)"/> 
+            <Input  name= 'description' hasBg hasScale hasPadding hasMargin hasFontSizeSecondary type="time" placeholder="form description(optional)"/> 
         </InputFieldWrapper>
     );
 }
 
-export default DateField;
+export default TimeField;
