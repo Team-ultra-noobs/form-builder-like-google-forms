@@ -13,7 +13,6 @@ const BuilderFieldWrapper = styled.div`
     margin-left:3rem;
     padding:1.5rem;
     overflow:scroll;
-
     ::-webkit-scrollbar{
         display:none;
     }
@@ -30,6 +29,7 @@ const BuilderField = ({inputs, handleChange}) => {
             <DateField/>
             <TimeField/>
         </BuilderFieldWrapper>
+
     )
 }
 
