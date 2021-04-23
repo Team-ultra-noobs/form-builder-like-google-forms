@@ -21,6 +21,13 @@ const CardTitle = styled.h2`
     color:#fff;
 
 `
+const PlusIconWrapper = styled.div`
+    color:inherit;
+`
+const PlusIcon = styled.img`
+    width:inherit;
+`
+
 const AddForm = () => {
 	const addForm = useStoreActions((actions) => actions.forms.createForm);
 
@@ -34,9 +41,9 @@ const AddForm = () => {
                 }}
             >
                 <CardTitle>Blank</CardTitle>
-                <div>
-                    <img src={icons.plusIcon} alt="plus icon"/>
-                </div>
+                <PlusIconWrapper>
+                    <PlusIcon src={icons.plusIcon} alt="plus icon"/>
+                </PlusIconWrapper>
             </CardBtn>
     )
 }
