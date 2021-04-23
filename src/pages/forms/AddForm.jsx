@@ -23,9 +23,13 @@ const CardTitle = styled.h2`
 `
 const PlusIconWrapper = styled.div`
     color:inherit;
+    position:relative;
 `
 const PlusIcon = styled.img`
-    width:inherit;
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-60%);
 `
 
 const AddForm = () => {
