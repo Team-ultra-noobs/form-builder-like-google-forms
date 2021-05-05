@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled 	 from "styled-components";
 import { icons } from "../../assets";
 
 const Card = styled.div`

@@ -3,7 +3,7 @@ import { useStoreActions } from "easy-peasy";
 import shortid             from "shortid";
 import styled              from 'styled-components';
 
-import {icons} from '../../assets';
+import {icons}             from '../../assets';
 
 const CardBtn = styled.div`
     display:flex;
