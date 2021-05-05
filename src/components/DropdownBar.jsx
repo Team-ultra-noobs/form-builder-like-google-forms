@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import {icons} from '../assets/index';
-import DFlex from './DFlex';
+import styled   from 'styled-components';
+import {icons}  from '../assets/index';
+import DFlex    from './DFlex';
 
 const DropdownBarItems = styled.ul`
     padding:1rem;
@@ -42,7 +42,7 @@ const DropdownBar = () => {
                 <img src={icons.fileUpload} alt="File Upload"/>
             </DFlex>
 
-            
+
         </DropdownBarItems>
     )
 }

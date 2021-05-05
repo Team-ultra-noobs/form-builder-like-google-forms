@@ -1,14 +1,14 @@
-import { Link } from "@reach/router";
-import Container from './Container';
+import { Link } 	   from "@reach/router";
+import Container       from './Container';
 import {images, icons} from '../assets/'
-import styled from 'styled-components'
-import DFlex from '../components/DFlex';
-import Button from './Button';
+import styled          from 'styled-components'
+import DFlex           from '../components/DFlex';
+import Button          from './Button';
+
 
 const Navigation = styled.nav`
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
 `
-
 
 const LogoWrap = styled.div`
 	text-align:center;
@@ -65,7 +65,7 @@ const Nav = ({ isBuilder, inputs}) => {
 						<DFlex>
 							{isBuilder && <Button primary hasWidth>Publish</Button>}
 							<ProfileIcon src={images.profile} alt="profile picture"/>
-							<ProfileName>Asief Mahir</ProfileName>
+							<ProfileName>Md Mahbubur Rahman</ProfileName>
 							<DropDown src={icons.downArrow} alt="down arrow icon"/>
 						</DFlex>
 					</DFlex>

@@ -3,7 +3,7 @@ import { useStoreActions } from "easy-peasy";
 import shortid             from "shortid";
 import styled              from 'styled-components';
 
-import {icons} from '../../assets';
+import {icons}             from '../../assets';
 
 const CardBtn = styled.div`
     display:flex;
@@ -21,6 +21,17 @@ const CardTitle = styled.h2`
     color:#fff;
 
 `
+const PlusIconWrapper = styled.div`
+    color:inherit;
+    position:relative;
+`
+const PlusIcon = styled.img`
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform:translate(-50%,-60%);
+`
+
 const AddForm = () => {
 	const addForm = useStoreActions((actions) => actions.forms.createForm);
 
@@ -34,9 +45,9 @@ const AddForm = () => {
                 }}
             >
                 <CardTitle>Blank</CardTitle>
-                <div>
-                    <img src={icons.plusIcon} alt="plus icon"/>
-                </div>
+                <PlusIconWrapper>
+                    <PlusIcon src={icons.plusIcon} alt="plus icon"/>
+                </PlusIconWrapper>
             </CardBtn>
     )
 }
